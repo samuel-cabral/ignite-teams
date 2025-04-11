@@ -1,7 +1,7 @@
 import { Loading } from '@components/Loading'
 import {
-  Roboto_400Regular,
-  Roboto_700Bold,
+  Roboto_400Regular as RobotoRegular,
+  Roboto_700Bold as RobotoBold,
   useFonts,
 } from '@expo-google-fonts/roboto'
 import { Groups } from '@screens/Groups'
@@ -11,7 +11,7 @@ import { ThemeProvider } from 'styled-components'
 import theme from './src/theme'
 
 export default function App() {
-  const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold })
+  const [fontsLoaded] = useFonts({ RobotoRegular, RobotoBold })
 
   return (
     <ThemeProvider theme={theme}>
